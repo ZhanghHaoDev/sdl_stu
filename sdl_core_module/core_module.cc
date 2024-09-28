@@ -7,19 +7,16 @@
 
 core_model::core_model(){
     // 初始化 SDL
-    if (SDL_Init(SDL_INIT_VIDEO) < 0){
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0){
         std::cout << "SDL 初始化失败！SDL_Error: " << SDL_GetError() << std::endl;
     }
     else{
         is_initialized = true;
-        std::cout << "SDL 初始化成功！" << std::endl;
     }
 }
 
 core_model::~core_model(){
-    // 关闭 SDL
     SDL_Quit();
-    std::cout << "SDL 成功退出！" << std::endl;
     is_initialized = false;
 }
 

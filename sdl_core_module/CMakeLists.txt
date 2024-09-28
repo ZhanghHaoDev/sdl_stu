@@ -9,5 +9,4 @@ find_package(SDL2 REQUIRED)
 
 target_link_libraries(core_module PUBLIC
     SDL2::SDL2
-    SDL2::SDL2main
 )
