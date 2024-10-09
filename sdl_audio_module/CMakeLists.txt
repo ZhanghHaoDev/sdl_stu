@@ -1,4 +1,4 @@
-add_library(audio_module STATIC 
+add_library(audio_module STATIC
     audio_module.cc
 )
 

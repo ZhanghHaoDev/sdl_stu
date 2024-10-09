@@ -1,6 +1,9 @@
-﻿#include "video_module.h"
+﻿#include <iostream>
+
+#include "video_module.h"
 
 #include "gtest/gtest.h"
+#include <iterator>
 
 TEST(video_module,sdl_window_tes){
     video_module module;
@@ -13,6 +16,7 @@ TEST(video_module, render_and_draw_test){
 }
 
 TEST(video_module, sdl_image_test){
+    std::cout << "ss" << std::endl;
     video_module module;
     module.sdl_image();
 }
